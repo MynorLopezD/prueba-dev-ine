@@ -90,7 +90,7 @@ export default function AnnouncementCard({ item, onViewDetail }: AnnouncementCar
 
       <div className="mt-4 flex items-center justify-end gap-2">
         <Button variant="secondary" onClick={() => onViewDetail(item)}>Ver detalle</Button>
-        <Button variant="primary">Acción</Button>
+        <Button variant="primary" onClick={() => onViewDetail(item)}>Acción</Button>
       </div>
     </article>
   );

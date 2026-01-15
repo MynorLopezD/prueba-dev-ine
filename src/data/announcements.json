@@ -50,5 +50,40 @@
     "category": "general",
     "tags": ["Infra", "Aviso"],
     "dateLabel": "Hoy"
+  },
+  {
+    "id": "a-005",
+    "title": "Anuncio general: Reestructuración del sistema",
+    "summary": "Se realizará una reestructuración del sistema en los proximos dias.",
+    "category": "general",
+    "tags": [],
+    "dateLabel": "Esta semana",
+    "achievements": [
+      {
+        "name": "Componentes",
+        "difficulty": "Baja",
+        "potential": "Se agregan nuevos componentes reutilizables"
+      },
+      {
+        "name": "Estructura",
+        "difficulty": "Media",
+        "potential": "Se reestructuran los archivos del sistema"
+      },
+      {
+        "name": "Metodologías",
+        "difficulty": "Media",
+        "potential": "Se implementan nuevas metodologías"
+      },
+      {
+        "name": "Equipo",
+        "difficulty": "Media",
+        "potential": "Se cambia el equipo de trabajo"
+      },
+      {
+        "name": "Rendimiento",
+        "difficulty": "Alta",
+        "potential": "Se mejora el rendimiento del sistema"
+      }
+    ]
   }
 ]
