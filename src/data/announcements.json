@@ -5,7 +5,19 @@
     "summary": "Se habilitan mejoras visuales y componentes reutilizables para el frontend.",
     "category": "comunicados",
     "tags": ["UI", "React", "Accesibilidad"],
-    "dateLabel": "Hoy"
+    "dateLabel": "Hoy",
+    "achievements": [
+      {
+        "name": "Prototipo funcional",
+        "difficulty": "Alta",
+        "potential": "Implementación nacional"
+      },
+      {
+        "name": "Validación técnica",
+        "difficulty": "Media",
+        "potential": "Escalabilidad"
+      }
+    ]
   },
   {
     "id": "a-002",
@@ -20,8 +32,9 @@
     "title": "Anuncio general: mantenimiento programado",
     "summary": "Se realizará mantenimiento programado. El servicio podría estar intermitente.",
     "category": "general",
-    "tags": ["Infra", "Aviso"],
-    "dateLabel": "Esta semana"
+    "tags": [],
+    "dateLabel": "Esta semana",
+    "achievements": []
   },
   {
     "id": "a-004",
