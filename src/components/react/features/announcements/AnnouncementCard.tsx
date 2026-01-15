@@ -16,7 +16,7 @@ import Badge from "@/components/react/ui/Badge";
  * - "comunicados" → "Comunicado" con variante "warning" (ámbar)
  * - Por defecto → "Anuncio" con variante "info"
  */
-function categoryConfig(category: Announcement["category"]) {
+export function categoryConfig(category: Announcement["category"]) {
   switch (category) {
     case "general":
       return { label: "General", variant: "info" as const };
@@ -53,7 +53,13 @@ function categoryConfig(category: Announcement["category"]) {
  * - Las etiquetas se muestran como badges con variante "info"
  * - Utiliza componentes reutilizables Badge y Button del sistema de diseño
  */
-export default function AnnouncementCard({ item }: { item: Announcement }) {
+
+type AnnouncementCardProps = {
+  item: Announcement;
+  onViewDetail: (announcement: Announcement) => void;
+};
+
+export default function AnnouncementCard({ item, onViewDetail }: AnnouncementCardProps) {
   const category = categoryConfig(item.category);
 
   return (
@@ -72,16 +78,18 @@ export default function AnnouncementCard({ item }: { item: Announcement }) {
         <span className="text-xs text-slate-500">{item.dateLabel}</span>
       </div>
 
-      <div className="mt-4 flex flex-wrap items-center gap-2">
-        {item.tags.map((t) => (
-          <Badge key={t} variant="info">
-            {t}
-          </Badge>
-        ))}
-      </div>
+      {item.tags?.length ? (
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          {item.tags.map((t) => (
+            <Badge key={t} variant="info">
+              {t}
+            </Badge>
+          ))}
+        </div>
+      ) : null}
 
       <div className="mt-4 flex items-center justify-end gap-2">
-        <Button variant="secondary">Ver detalle</Button>
+        <Button variant="secondary" onClick={() => onViewDetail(item)}>Ver detalle</Button>
         <Button variant="primary">Acción</Button>
       </div>
     </article>
