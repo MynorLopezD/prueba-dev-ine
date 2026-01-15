@@ -8,14 +8,14 @@
     "dateLabel": "Hoy",
     "achievements": [
       {
-        "name": "Prototipo funcional",
+        "name": "Mejora en la arquitectura del sistema",
         "difficulty": "Alta",
-        "potential": "Implementación nacional"
+        "potential": "Implementación robusta y escalable"
       },
       {
-        "name": "Validación técnica",
+        "name": "Mejor experiencia de usuario",
         "difficulty": "Media",
-        "potential": "Escalabilidad"
+        "potential": "Interacción más fluida e intuitiva"
       }
     ]
   },
@@ -25,7 +25,14 @@
     "summary": "Crear componentes UI (Button, Input, Card) y hooks para filtros y búsqueda.",
     "category": "convocatorias",
     "tags": ["TypeScript", "Hooks", "Reutilización"],
-    "dateLabel": "Ayer"
+    "dateLabel": "Ayer",
+    "achievements": [
+      {
+        "name": "Mejora del UI",
+        "difficulty": "Media",
+        "potential": "Mejor experiencia de usuario"
+      }
+    ]
   },
   {
     "id": "a-003",
